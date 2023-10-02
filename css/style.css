@@ -1,3 +1,5 @@
+/* In my CSS file, I organized the CSS selectors in alphabetical order */
+
 /* Google Font */
 @import url("https://fonts.googleapis.com/css?family=Oranienbaum");
 @import url("https://fonts.googleapis.com/css?family=Playfair");
@@ -7,46 +9,6 @@
 * {
   text-align: center;
   text-decoration: none;
-}
-
-/* assign width and center the body */
-body {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* color and font for heading */
-h1 {
-  color: #f78888;
-  font-family: "Oranienbaum", serif;
-  font-size: 3em;
-}
-
-/* inline display and height padding for nav bar */
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-/* color and font for nav bar */
-li a {
-  color: #5da2d5;
-  font-family: "Playfair";
-  font-size: 1.5em;
-  /* color: #90ccf4; */
-}
-
-/* color and font for the rest of text */
-p a {
-  color: #f3d250;
-  font-family: "Lora", serif;
-  font-size: 1em;
-}
-
-/* even spacing for the nav bar */
-ul {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 /* background color and padding for nav bar */
@@ -66,6 +28,10 @@ ul {
 .article {
   height: 30em;
   margin-bottom: 1em;
+}
+
+.text {
+  background-color: gray;
 }
 
 /* background images for each column */
@@ -88,10 +54,56 @@ ul {
 .column1,
 .column2,
 .column3 {
-  width: 31.3%;
+  background-size: cover;
   float: left;
   margin: 1%;
-  background-size: cover;
+  width: 31.3%;
+}
+
+/* assign width and center the body */
+body {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* color and font for heading */
+h1 {
+  color: #f78888;
+  font-family: "Oranienbaum", serif;
+  font-size: 3em;
+}
+
+/* inline display and height padding for nav bar */
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+/* color and font for nav bar */
+li a {
+  color: #5da2d5;
+  font-family: "Playfair";
+  font-size: 2em;
+}
+
+/* color and font for the description text */
+p {
+  color: #90ccf4;
+  font-family: "Lora", serif;
+  font-size: 1em;
+}
+
+/* color and font for the subtitles */
+p a {
+  color: #f3d250;
+  font-family: "Lora", serif;
+  font-size: 1.5em;
+}
+
+/* even spacing for the nav bar */
+ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* On screens that are 992px or less, apply a two column structure */
@@ -119,3 +131,5 @@ ul {
     margin-bottom: 1em;
   }
 }
+
+/* some of my css code are from Activity 11B */
