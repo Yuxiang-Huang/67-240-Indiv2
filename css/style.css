@@ -1,0 +1,109 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum");
+@import url("https://fonts.googleapis.com/css?family=Playfair");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+
+* {
+  text-align: center;
+  text-decoration: none;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #f78888;
+  font-family: "Oranienbaum", serif;
+  font-size: 3em;
+}
+
+li a {
+  color: #5da2d5;
+  font-family: "Playfair";
+  font-size: 1.5em;
+  /* color: #90ccf4; */
+}
+
+p a {
+  color: #f3d250;
+  font-family: "Lora", serif;
+  font-size: 1em;
+}
+
+#nav,
+#feature,
+#footer {
+  margin: 1%;
+}
+
+.column1 {
+  background-image: url("../img/Origin.jpg");
+  /* Source: https://www.pinterest.com/pin/146155950380483740/ */
+}
+
+.column2 {
+  background-image: url("../img/MoonCake.webp");
+  /* Source: https://curatedkitchenware.com/blogs/soupeduprecipes/classic-cantonese-mooncake-recipe */
+}
+
+.column3 {
+  background-image: url("../img/Culture.webp");
+  /* Source: https://www.chinahighlights.com/festivals/mid-autumn-festival.htm */
+}
+
+.column1,
+.column2,
+.column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+  background-size: cover;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+#nav {
+  background-color: #ececec;
+  padding: 0.5em 0;
+}
+
+.article {
+  height: 30em;
+  margin-bottom: 1em;
+}
+
+/* On screens that are 992px or less, apply a visible design/ layout change */
+@media screen and (max-width: 992px) {
+  .column1 {
+    width: 98%;
+    float: left;
+    margin-bottom: 1em;
+  }
+  .column2,
+  .column3 {
+    width: 48%;
+    float: left;
+    margin: 1%;
+  }
+}
+
+/* On screens that are 768 or less, apply a visible design/ layout change */
+@media screen and (max-width: 768px) {
+  .column1,
+  .column2,
+  .column3 {
+    width: 98%;
+    float: left;
+    margin-bottom: 1em;
+  }
+}
