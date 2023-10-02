@@ -3,22 +3,32 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 
+/* center all text and have no lines under the links */
 * {
   text-align: center;
   text-decoration: none;
 }
 
+/* assign width and center the body */
 body {
   width: 90%;
   margin: 0 auto;
 }
 
+/* color and font for heading */
 h1 {
   color: #f78888;
   font-family: "Oranienbaum", serif;
   font-size: 3em;
 }
 
+/* inline display and height padding for nav bar */
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+/* color and font for nav bar */
 li a {
   color: #5da2d5;
   font-family: "Playfair";
@@ -26,18 +36,39 @@ li a {
   /* color: #90ccf4; */
 }
 
+/* color and font for the rest of text */
 p a {
   color: #f3d250;
   font-family: "Lora", serif;
   font-size: 1em;
 }
 
+/* even spacing for the nav bar */
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* background color and padding for nav bar */
+#nav {
+  background-color: #ececec;
+  padding: 0.5em 0;
+}
+
+/* add margin */
 #nav,
 #feature,
 #footer {
   margin: 1%;
 }
 
+/* height and margin for columns */
+.article {
+  height: 30em;
+  margin-bottom: 1em;
+}
+
+/* background images for each column */
 .column1 {
   background-image: url("../img/Origin.jpg");
   /* Source: https://www.pinterest.com/pin/146155950380483740/ */
@@ -53,6 +84,7 @@ p a {
   /* Source: https://www.chinahighlights.com/festivals/mid-autumn-festival.htm */
 }
 
+/* On screens that are larger than 992px, apply a three column structure */
 .column1,
 .column2,
 .column3 {
@@ -62,27 +94,7 @@ p a {
   background-size: cover;
 }
 
-ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-#nav {
-  background-color: #ececec;
-  padding: 0.5em 0;
-}
-
-.article {
-  height: 30em;
-  margin-bottom: 1em;
-}
-
-/* On screens that are 992px or less, apply a visible design/ layout change */
+/* On screens that are 992px or less, apply a two column structure */
 @media screen and (max-width: 992px) {
   .column1 {
     width: 98%;
@@ -97,7 +109,7 @@ li {
   }
 }
 
-/* On screens that are 768 or less, apply a visible design/ layout change */
+/* On screens that are 768 or less, apply a one column structure */
 @media screen and (max-width: 768px) {
   .column1,
   .column2,
