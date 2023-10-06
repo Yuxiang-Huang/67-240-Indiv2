@@ -30,10 +30,6 @@
   margin-bottom: 1em;
 }
 
-.text {
-  background-color: gray;
-}
-
 /* background images for each column */
 .column1 {
   background-image: url("../img/Origin.jpg");
@@ -88,9 +84,20 @@ li a {
 
 /* color and font for the description text */
 p {
-  color: #90ccf4;
   font-family: "Lora", serif;
   font-size: 1em;
+}
+
+p#Description1 {
+  color: pink;
+}
+
+p#Description2 {
+  color: lightgreen;
+}
+
+p#Description3 {
+  color: #90ccf4;
 }
 
 /* color and font for the subtitles */
